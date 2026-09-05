@@ -27,7 +27,13 @@ platform/arch match and falls back to the portable package.
 GitHub repository's release asset, or any public URL. The catalog does
 not host packages; it points at them.
 
-## Signing (platform_release — the same air-gapped ai3-bundle ceremony as a release)
+## Signing (platform_release — the same ceremony as a release)
+
+The catalog is signed with the platform_release key exactly as a release
+is; only the artifact kind and the payload differ. That key is ONE
+envelope carrying both PQ algorithms (ML-DSA-87 and SLH-DSA-SHA2-256s),
+so `--priv` is given ONCE — a second `--priv` for the same algorithms is
+rejected.
 
 1. Edit `aiios-plugins.md`.
 2. Regenerate the payload — its `catalog_sha256` must equal the file's hash:
@@ -36,12 +42,14 @@ not host packages; it points at them.
 
    and write `aiios-plugins.sig-payload.json`:
    `{ "catalog_version": N, "generated": "...", "catalog_sha256": "sha256:..." }`.
-3. Sign with the platform_release key, artifact kind `plugin.catalog`:
+3. Sign, artifact kind `plugin.catalog`:
 
-       ai3-bundle -artifact-kind plugin.catalog -profile AIII-PQ-SIGNATURE-V1-ROOT \
-         -payload aiios-plugins.sig-payload.json \
-         -private-key <platform ml> -private-key <platform slh> \
-         -out aiios-plugins.md.sig
+       ai3-bundle create \
+         --artifact-kind plugin.catalog \
+         --profile AIII-PQ-SIGNATURE-V1-ROOT \
+         --payload aiios-plugins.sig-payload.json \
+         --priv <the platform_release private envelope> \
+         --output aiios-plugins.md.sig
 
 4. Commit `aiios-plugins.md` and `aiios-plugins.md.sig` together.
 
