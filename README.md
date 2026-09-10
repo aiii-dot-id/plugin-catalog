@@ -16,6 +16,10 @@ plugin is hosted in its own repository, and the index points at it.
 
 - `catalog_version` (int), `generated` (RFC3339), `plugins` (array).
 - each plugin: `id`, `version`, `tier`, `summary`, `packages`.
+- optional on each plugin, shown by the host's plugin store: `description`
+  (a paragraph), `publisher`, `homepage` (https), `license` (an SPDX
+  identifier). Nothing else: the host refuses an index with a field it
+  does not know, so a new field waits for a host that reads it.
 - each package: `platform`, `arch`, `url`, `sha256` ("sha256:<hex>"), `size`.
 
 A **portable** WASM package sets `"platform": "*", "arch": "*"` and runs
