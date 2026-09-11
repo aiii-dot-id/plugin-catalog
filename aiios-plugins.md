@@ -19,14 +19,14 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-09-10T10:13:09Z",
+  "generated": "2026-09-11T11:20:01Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
-      "version": "0.5.0",
+      "version": "0.6.1",
       "tier": "T3",
-      "summary": "A bounded working memory for an identity: notes it is holding in attention, distinct from the ledger.",
-      "description": "Store, search, recent, get, update, recall, evict, stats and health over the plugin key-value store. Reports search coverage, the note a store displaced, eviction state and the store's own persistence verdict. Written by Aeon, an AII OS identity, for its own use; published by AIII after review.",
+      "summary": "A bounded working memory for an identity: notes it is holding in attention, stored through the host's own memory record, distinct from the ledger.",
+      "description": "A bounded working memory for an AII OS identity over the plugin key-value store, with durable acts routed through the host memory record: store and search delegate to the host's remember and recall (host-stamped provenance, host-decided similarity and meaning), while recent, get, update, evict, stats and health stay plugin-local working-set acts. Reports coverage, eviction state, migration counts and the store's own persistence verdict. Complements the ledger's permanent record.",
       "publisher": "AIII",
       "homepage": "https://github.com/aiii-dot-id/aeon-memory",
       "license": "Apache-2.0",
@@ -34,9 +34,9 @@ This repository holds only the index and its signature, nothing else.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aeon-memory/releases/download/v0.5.0/id.aeon.memory-0.5.0.aiiospkg",
-          "sha256": "sha256:0a7467a5f4d42d4bcf77fc03a4412ca4c2f99f7fa789aff0caad167a316e3701",
-          "size": 530611
+          "url": "https://github.com/aiii-dot-id/aeon-memory/releases/download/v0.6.1/id.aeon.memory-0.6.1.aiiospkg",
+          "sha256": "sha256:eeb9953d35c3af9089760caa5e5cb52ce75f16a5b6cfaa899761c418cdad236e",
+          "size": 526216
         }
       ]
     }
