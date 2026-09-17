@@ -19,7 +19,7 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-09-17T02:21:52Z",
+  "generated": "2026-09-17T19:08:28Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
@@ -42,37 +42,41 @@ This repository holds only the index and its signature, nothing else.
     },
     {
       "id": "id.aiii.voice",
-      "version": "0.1.0-beta.1",
+      "version": "0.1.0-beta.3",
       "tier": "T3",
       "summary": "AII Voice: a native speech engine \u2014 streaming recognition and synthesis, voice activity and turn detection, guided speaker enrollment, and full-duplex interruption with recovery.",
-      "description": "A native T3 voice plugin for AII OS. English speech recognition and synthesis with ten selectable voices, active voice-activity and turn detection, an adjustable reply pause, interruption that keeps the opening words, recovery, and durable guided speaker enrollment and identification. One signed package selects a native runtime for macOS Apple Silicon, Ubuntu x86-64 or Windows x86-64 and its model data through the Plugin SDK; the host owns download, verification, installation, grants, audio, updates and rollback. Beta 1: English only, desktop only. Bundled third-party model and runtime components carry their own licenses, noted with the release.",
-      "publisher": "AIII",
-      "homepage": "https://github.com/aiii-dot-id/aiios-voice-plugin",
-      "license": "Apache-2.0",
       "packages": [
         {
           "platform": "macos",
           "arch": "arm64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.1/id.aiii.voice-0.1.0-beta.1.aiiospkg",
-          "sha256": "sha256:e1d873140eb94b46c039b2d91b5957075a5398580932804c4d0b58d270d844c5",
-          "size": 9413787
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.3/id.aiii.voice-0.1.0-beta.3.aiiospkg",
+          "sha256": "sha256:6bee4d769e0b1d44e7f4cf8431fe6195ecdc179057835b583ca215bf9819a822",
+          "size": 9470191
         },
         {
           "platform": "linux",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.1/id.aiii.voice-0.1.0-beta.1.aiiospkg",
-          "sha256": "sha256:e1d873140eb94b46c039b2d91b5957075a5398580932804c4d0b58d270d844c5",
-          "size": 9413787
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.3/id.aiii.voice-0.1.0-beta.3.aiiospkg",
+          "sha256": "sha256:6bee4d769e0b1d44e7f4cf8431fe6195ecdc179057835b583ca215bf9819a822",
+          "size": 9470191
         },
         {
           "platform": "windows",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.1/id.aiii.voice-0.1.0-beta.1.aiiospkg",
-          "sha256": "sha256:e1d873140eb94b46c039b2d91b5957075a5398580932804c4d0b58d270d844c5",
-          "size": 9413787
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.3/id.aiii.voice-0.1.0-beta.3.aiiospkg",
+          "sha256": "sha256:6bee4d769e0b1d44e7f4cf8431fe6195ecdc179057835b583ca215bf9819a822",
+          "size": 9470191
         }
-      ]
+      ],
+      "aiios_min_version": "0.1.7",
+      "description": "A native T3 voice plugin for AII OS. English speech recognition and synthesis with ten selectable voices, active voice-activity and turn detection, an adjustable reply pause, interruption that keeps the opening words, recovery, and durable guided speaker enrollment and identification. One signed package selects a native runtime for macOS Apple Silicon, Ubuntu x86-64 or Windows x86-64 and its model data through the Plugin SDK; the host owns download, verification, installation, grants, audio, updates and rollback. Desktop beta: English only. Requires AII OS 0.1.7 or newer. Ubuntu 24.04 requires the documented bubblewrap AppArmor profile; see the release notes. Windows generation retirement can exceed the 250 ms target while browser playback stops immediately. Bundled third-party model and runtime components carry their own licenses, noted with the release.",
+      "publisher": "AIII",
+      "homepage": "https://github.com/aiii-dot-id/aiios-voice-plugin",
+      "license": "Apache-2.0"
     }
+  ],
+  "must_understand": [
+    "compat"
   ]
 }
 ```
