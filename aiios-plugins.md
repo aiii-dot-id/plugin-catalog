@@ -19,7 +19,7 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-09-17T19:08:28Z",
+  "generated": "2026-09-18T19:48:06Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
@@ -42,37 +42,47 @@ This repository holds only the index and its signature, nothing else.
     },
     {
       "id": "id.aiii.voice",
-      "version": "0.1.0-beta.3",
+      "version": "0.1.0-beta.4",
       "tier": "T3",
-      "summary": "AII Voice: a native speech engine \u2014 streaming recognition and synthesis, voice activity and turn detection, guided speaker enrollment, and full-duplex interruption with recovery.",
+      "summary": "AII Voice",
+      "aiios_min_version": "0.1.8",
       "packages": [
         {
           "platform": "macos",
           "arch": "arm64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.3/id.aiii.voice-0.1.0-beta.3.aiiospkg",
-          "sha256": "sha256:6bee4d769e0b1d44e7f4cf8431fe6195ecdc179057835b583ca215bf9819a822",
-          "size": 9470191
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.4/id.aiii.voice-0.1.0-beta.4.aiiospkg",
+          "sha256": "sha256:2f74ccfddb247e8085fa711ad3996ad681227c250b7fe4b5057e5b6c026e119f",
+          "size": 9477409
         },
         {
           "platform": "linux",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.3/id.aiii.voice-0.1.0-beta.3.aiiospkg",
-          "sha256": "sha256:6bee4d769e0b1d44e7f4cf8431fe6195ecdc179057835b583ca215bf9819a822",
-          "size": 9470191
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.4/id.aiii.voice-0.1.0-beta.4.aiiospkg",
+          "sha256": "sha256:2f74ccfddb247e8085fa711ad3996ad681227c250b7fe4b5057e5b6c026e119f",
+          "size": 9477409
         },
         {
           "platform": "windows",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.3/id.aiii.voice-0.1.0-beta.3.aiiospkg",
-          "sha256": "sha256:6bee4d769e0b1d44e7f4cf8431fe6195ecdc179057835b583ca215bf9819a822",
-          "size": 9470191
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.4/id.aiii.voice-0.1.0-beta.4.aiiospkg",
+          "sha256": "sha256:2f74ccfddb247e8085fa711ad3996ad681227c250b7fe4b5057e5b6c026e119f",
+          "size": 9477409
         }
       ],
-      "aiios_min_version": "0.1.7",
-      "description": "A native T3 voice plugin for AII OS. English speech recognition and synthesis with ten selectable voices, active voice-activity and turn detection, an adjustable reply pause, interruption that keeps the opening words, recovery, and durable guided speaker enrollment and identification. One signed package selects a native runtime for macOS Apple Silicon, Ubuntu x86-64 or Windows x86-64 and its model data through the Plugin SDK; the host owns download, verification, installation, grants, audio, updates and rollback. Desktop beta: English only. Requires AII OS 0.1.7 or newer. Ubuntu 24.04 requires the documented bubblewrap AppArmor profile; see the release notes. Windows generation retirement can exceed the 250 ms target while browser playback stops immediately. Bundled third-party model and runtime components carry their own licenses, noted with the release.",
+      "title": "AII Voice",
+      "description": "Native speech recognition and synthesis, ten selectable English voices, active voice-activity detection with an adjustable pause, interruption and recovery, and guided speaker enrollment and identification. One signed package selects the companion runtime and model data for macOS Apple Silicon, Ubuntu x86-64 or Windows x86-64. AII OS owns downloads, integrity verification, installation, audio, permissions and updates; no system Python is required. Desktop beta: English only. Speaker identification is probabilistic evidence, not authentication. Read the release notes for prerequisites, settings and qualification limits. Third-party model and runtime components retain their own licenses.",
       "publisher": "AIII",
       "homepage": "https://github.com/aiii-dot-id/aiios-voice-plugin",
-      "license": "Apache-2.0"
+      "license": "Apache-2.0",
+      "category": "voice",
+      "keywords": [
+        "speech",
+        "voice",
+        "STT",
+        "TTS",
+        "VAD",
+        "speaker identification"
+      ]
     }
   ],
   "must_understand": [

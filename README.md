@@ -16,16 +16,27 @@ plugin is hosted in its own repository, and the index points at it.
 
 - `catalog_version` (int), `generated` (RFC3339), `plugins` (array).
 - each plugin: `id`, `version`, `tier`, `summary`, `packages`.
-- optional on each plugin, shown by the host's plugin store: `description`
-  (a paragraph), `publisher`, `homepage` (https), `license` (an SPDX
-  identifier). Nothing else: the host refuses an index with a field it
-  does not know, so a new field waits for a host that reads it.
+- optional store details: `title`, `description` (a paragraph), `publisher`,
+  `homepage` (https), `license` (an SPDX identifier), `category`, `keywords`
+  and `updated` (YYYY-MM-DD or RFC3339).
+- optional package compatibility: `aiios_min_version` and
+  `aiios_max_exclusive_version`, exactly matching the signed package. A
+  catalog using these bounds must include `"compat"` in its top-level
+  `must_understand` list. Unknown host compatibility fails closed.
+- unknown additive fields are ignored by current hosts. Any feature whose
+  semantics a reader must understand is named in top-level `must_understand`;
+  an unsupported feature refuses the index. Keep this one catalog, in place.
 - each package: `platform`, `arch`, `url`, `sha256` ("sha256:<hex>"), `size`.
 
 A **portable** WASM package sets `"platform": "*", "arch": "*"` and runs
 on every host; a **native** package names a concrete `platform` and
 `arch`; list one per supported host. The host prefers an exact
 platform/arch match and falls back to the portable package.
+
+A single native archive may contain several platform variants. List one
+package row per supported platform/architecture, all pointing to that same
+archive URL, size and hash. The package selects its platform runtime and model
+dependencies; this does not require separate plugin IDs or separate catalogs.
 
 `url` is wherever the plugin's author hosts the `.aiiospkg` — its own
 GitHub repository's release asset, or any public URL. The catalog does
@@ -55,7 +66,14 @@ rejected.
          --priv <the platform_release private envelope> \
          --output aiios-plugins.md.sig
 
-4. Commit `aiios-plugins.md` and `aiios-plugins.md.sig` together.
+4. Verify with `aii plugin catalog -catalog-dir /path/to/prepared-catalog`
+   using the intended release host and its shipped platform root (or the
+   explicit pinned `-platform-key`). Confirm a changed-byte copy is refused.
+5. Commit the index, signature and signature payload together. Publish only
+   after the package URLs are live and their complete downloaded bodies match
+   the declared size/hash. Re-read the catalog's base commit before landing;
+   concurrent updates must be preserved, regenerated and re-signed, never
+   overwritten with an old draft.
 
 The host verifies the signature against the pinned platform_release root,
 checks the file hash matches the signed `catalog_sha256`, then parses the
