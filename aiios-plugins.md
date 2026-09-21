@@ -19,7 +19,7 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-09-18T19:48:06Z",
+  "generated": "2026-09-21T08:13:00Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
@@ -42,7 +42,7 @@ This repository holds only the index and its signature, nothing else.
     },
     {
       "id": "id.aiii.voice",
-      "version": "0.1.0-beta.4",
+      "version": "0.1.0-beta.5",
       "tier": "T3",
       "summary": "AII Voice",
       "aiios_min_version": "0.1.8",
@@ -50,27 +50,27 @@ This repository holds only the index and its signature, nothing else.
         {
           "platform": "macos",
           "arch": "arm64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.4/id.aiii.voice-0.1.0-beta.4.aiiospkg",
-          "sha256": "sha256:2f74ccfddb247e8085fa711ad3996ad681227c250b7fe4b5057e5b6c026e119f",
-          "size": 9477409
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.5/id.aiii.voice-0.1.0-beta.5.aiiospkg",
+          "sha256": "sha256:2b852d0d00a3a97ff8136688fe71544508cfa373ebc9e58532c0b685437eea70",
+          "size": 9586705
         },
         {
           "platform": "linux",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.4/id.aiii.voice-0.1.0-beta.4.aiiospkg",
-          "sha256": "sha256:2f74ccfddb247e8085fa711ad3996ad681227c250b7fe4b5057e5b6c026e119f",
-          "size": 9477409
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.5/id.aiii.voice-0.1.0-beta.5.aiiospkg",
+          "sha256": "sha256:2b852d0d00a3a97ff8136688fe71544508cfa373ebc9e58532c0b685437eea70",
+          "size": 9586705
         },
         {
           "platform": "windows",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.4/id.aiii.voice-0.1.0-beta.4.aiiospkg",
-          "sha256": "sha256:2f74ccfddb247e8085fa711ad3996ad681227c250b7fe4b5057e5b6c026e119f",
-          "size": 9477409
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.5/id.aiii.voice-0.1.0-beta.5.aiiospkg",
+          "sha256": "sha256:2b852d0d00a3a97ff8136688fe71544508cfa373ebc9e58532c0b685437eea70",
+          "size": 9586705
         }
       ],
       "title": "AII Voice",
-      "description": "Native speech recognition and synthesis, ten selectable English voices, active voice-activity detection with an adjustable pause, interruption and recovery, and guided speaker enrollment and identification. One signed package selects the companion runtime and model data for macOS Apple Silicon, Ubuntu x86-64 or Windows x86-64. AII OS owns downloads, integrity verification, installation, audio, permissions and updates; no system Python is required. Desktop beta: English only. Speaker identification is probabilistic evidence, not authentication. Read the release notes for prerequisites, settings and qualification limits. Third-party model and runtime components retain their own licenses.",
+      "description": "Native speaker-conditioned speech recognition and synthesis, persistent anonymous speaker UUIDs with post-session naming, ten selectable English voices, active voice-activity detection with adjustable pause and capture limit, interruption and recovery, meeting and output-only modes. One signed package selects the runtime and model files for macOS Apple Silicon, Ubuntu x86-64 or Windows x86-64. AII OS owns downloads, integrity verification, installation, audio, permissions and updates; no system Python is required. Compatible AII OS 0.1.8 enforces UUID-only/ignore filters before identity delivery. English desktop beta; speaker attribution is uncertain evidence, not authentication. Third-party models and runtimes retain their own licenses. See release notes for prerequisites and qualification limits.",
       "publisher": "AIII",
       "homepage": "https://github.com/aiii-dot-id/aiios-voice-plugin",
       "license": "Apache-2.0",
