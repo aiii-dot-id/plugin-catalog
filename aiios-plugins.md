@@ -19,11 +19,11 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-09-21T08:13:00Z",
+  "generated": "2026-09-21T16:18:33Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
-      "version": "0.6.3",
+      "version": "0.6.4",
       "tier": "T3",
       "summary": "A bounded working memory for an identity: notes it is holding in attention, stored through the host's own memory record, distinct from the ledger.",
       "description": "A bounded working memory for an AII OS identity over the plugin key-value store, with durable acts routed through the host memory record: store and search delegate to the host's remember and recall (host-stamped provenance, host-decided similarity and meaning), while recent, get, update, evict, stats and health stay plugin-local working-set acts. Reports coverage, eviction state, migration counts and the store's own persistence verdict. Complements the ledger's permanent record.",
@@ -34,9 +34,9 @@ This repository holds only the index and its signature, nothing else.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aeon-memory/releases/download/v0.6.3/id.aeon.memory-0.6.3.aiiospkg",
-          "sha256": "sha256:4e55ba2a2d966280107ad8bf4f4d06a2e1838aa90528454b0808bbc5cd301c9c",
-          "size": 526077
+          "url": "https://github.com/aiii-dot-id/aeon-memory/releases/download/v0.6.4/id.aeon.memory-0.6.4.aiiospkg",
+          "sha256": "sha256:e2d133407c9c35efd13bb41beaeb7792b08daedd79924a3b9bf80640c0d4a253",
+          "size": 528993
         }
       ]
     },
