@@ -19,7 +19,7 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-09-23T09:45:50Z",
+  "generated": "2026-09-23T18:07:00Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
@@ -86,10 +86,10 @@ This repository holds only the index and its signature, nothing else.
     },
     {
       "id": "id.aiii.codequality",
-      "version": "0.1.0",
+      "version": "0.1.7",
       "tier": "T3",
-      "summary": "Measures source code quality with TypeSafe's Jev as the judge: findings, dimension scores, an index and a band for each file.",
-      "description": "Measures source code quality with TypeSafe's Jev as the judge: a fixed catalogue of fault statements asked about each file's code and, separately, its comments; answers scored into findings, six dimension scores, an index and a band. Judges texts passed in, or scans a granted folder a few files per call.",
+      "summary": "Measures source code quality with TypeSafe's Jev as the judge: findings and leads, located to their function where Jev is sure, dimension scores, an index and a band for each file.",
+      "description": "Measures source code quality with TypeSafe's Jev as the judge: a fixed catalogue of fault statements asked about each file's code and, separately, its comments; answers scored into findings, six dimension scores, an index and a band. Judges texts passed in, or scans a folder in the identity's sandbox a few files per call.",
       "publisher": "AIII",
       "homepage": "https://github.com/aiii-dot-id/aii-codequality-plugin",
       "license": "Apache-2.0",
@@ -105,11 +105,12 @@ This repository holds only the index and its signature, nothing else.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.0/id.aiii.codequality-0.1.0.aiiospkg",
-          "sha256": "sha256:3b4f701e9cc0e859badaf3b61d8d6728e5d01e10761efc22f914a4140f8e597e",
-          "size": 1590086
+          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.7/id.aiii.codequality-0.1.7.aiiospkg",
+          "sha256": "sha256:42d27e8c3820f1ba08d4ded8e2f50ec3eba99e5f54c3e1417e19a2643e75e5bb",
+          "size": 1631102
         }
-      ]
+      ],
+      "aiios_min_version": "0.1.10"
     }
   ],
   "must_understand": [
