@@ -19,7 +19,7 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-09-23T18:07:00Z",
+  "generated": "2026-09-23T23:45:58Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
@@ -86,7 +86,7 @@ This repository holds only the index and its signature, nothing else.
     },
     {
       "id": "id.aiii.codequality",
-      "version": "0.1.7",
+      "version": "0.1.9",
       "tier": "T3",
       "summary": "Measures source code quality with TypeSafe's Jev as the judge: findings and leads, located to their function where Jev is sure, dimension scores, an index and a band for each file.",
       "description": "Measures source code quality with TypeSafe's Jev as the judge: a fixed catalogue of fault statements asked about each file's code and, separately, its comments; answers scored into findings, six dimension scores, an index and a band. Judges texts passed in, or scans a folder in the identity's sandbox a few files per call.",
@@ -105,9 +105,9 @@ This repository holds only the index and its signature, nothing else.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.7/id.aiii.codequality-0.1.7.aiiospkg",
-          "sha256": "sha256:42d27e8c3820f1ba08d4ded8e2f50ec3eba99e5f54c3e1417e19a2643e75e5bb",
-          "size": 1631102
+          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.9/id.aiii.codequality-0.1.9.aiiospkg",
+          "sha256": "sha256:4278fe0aaa92a7ed4bca8ba9db853a11d16c21533f82973fd3eb0d5c353c1626",
+          "size": 1632182
         }
       ],
       "aiios_min_version": "0.1.10"
