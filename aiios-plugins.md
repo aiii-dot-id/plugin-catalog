@@ -19,7 +19,7 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-10-02T22:02:56Z",
+  "generated": "2026-10-03T09:18:09Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
@@ -42,7 +42,7 @@ This repository holds only the index and its signature, nothing else.
     },
     {
       "id": "id.aiii.voice",
-      "version": "0.1.0-beta.7",
+      "version": "0.1.0-beta.8",
       "tier": "T3",
       "summary": "AII Voice",
       "aiios_min_version": "0.1.14",
@@ -50,23 +50,23 @@ This repository holds only the index and its signature, nothing else.
         {
           "platform": "macos",
           "arch": "arm64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.7/id.aiii.voice-0.1.0-beta.7.aiiospkg",
-          "sha256": "sha256:7e691d342bbd912e7169a8adacdea7cdf141af7e2fe4839773cc52c7edcbab54",
-          "size": 24437813
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.8/id.aiii.voice-0.1.0-beta.8.aiiospkg",
+          "sha256": "sha256:d06c323f416b6882f19a84783900f52d2a807355560920008e1b3e3ebb33bfd0",
+          "size": 24437857
         },
         {
           "platform": "linux",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.7/id.aiii.voice-0.1.0-beta.7.aiiospkg",
-          "sha256": "sha256:7e691d342bbd912e7169a8adacdea7cdf141af7e2fe4839773cc52c7edcbab54",
-          "size": 24437813
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.8/id.aiii.voice-0.1.0-beta.8.aiiospkg",
+          "sha256": "sha256:d06c323f416b6882f19a84783900f52d2a807355560920008e1b3e3ebb33bfd0",
+          "size": 24437857
         },
         {
           "platform": "windows",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.7/id.aiii.voice-0.1.0-beta.7.aiiospkg",
-          "sha256": "sha256:7e691d342bbd912e7169a8adacdea7cdf141af7e2fe4839773cc52c7edcbab54",
-          "size": 24437813
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.8/id.aiii.voice-0.1.0-beta.8.aiiospkg",
+          "sha256": "sha256:d06c323f416b6882f19a84783900f52d2a807355560920008e1b3e3ebb33bfd0",
+          "size": 24437857
         }
       ],
       "title": "AII Voice",
