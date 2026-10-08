@@ -19,7 +19,7 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-10-08T17:47:43Z",
+  "generated": "2026-10-08T18:31:01Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
@@ -115,7 +115,7 @@ This repository holds only the index and its signature, nothing else.
     },
     {
       "id": "id.aiii.meaning",
-      "version": "0.0.1-beta.2",
+      "version": "0.0.1-beta.3",
       "tier": "T3",
       "summary": "AII Meaning",
       "aiios_min_version": "0.1.15",
@@ -124,27 +124,34 @@ This repository holds only the index and its signature, nothing else.
           "platform": "macos",
           "arch": "arm64",
           "os_min_version": "26.5",
-          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.2/id.aiii.meaning-0.0.1-beta.2.aiiospkg",
-          "sha256": "sha256:12e70c78dd3a3c950c360e72df4e33f9e15ff9907fee1615ff5b163bd88c4167",
-          "size": 4227679
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.3/id.aiii.meaning-0.0.1-beta.3.aiiospkg",
+          "sha256": "sha256:9825723a76cc417df06c261649061abc20bcdd51e21d1f300ab8bc099edab9c7",
+          "size": 5504516
         },
         {
           "platform": "linux",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.2/id.aiii.meaning-0.0.1-beta.2.aiiospkg",
-          "sha256": "sha256:12e70c78dd3a3c950c360e72df4e33f9e15ff9907fee1615ff5b163bd88c4167",
-          "size": 4227679
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.3/id.aiii.meaning-0.0.1-beta.3.aiiospkg",
+          "sha256": "sha256:9825723a76cc417df06c261649061abc20bcdd51e21d1f300ab8bc099edab9c7",
+          "size": 5504516
+        },
+        {
+          "platform": "linux",
+          "arch": "arm64",
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.3/id.aiii.meaning-0.0.1-beta.3.aiiospkg",
+          "sha256": "sha256:9825723a76cc417df06c261649061abc20bcdd51e21d1f300ab8bc099edab9c7",
+          "size": 5504516
         },
         {
           "platform": "windows",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.2/id.aiii.meaning-0.0.1-beta.2.aiiospkg",
-          "sha256": "sha256:12e70c78dd3a3c950c360e72df4e33f9e15ff9907fee1615ff5b163bd88c4167",
-          "size": 4227679
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.3/id.aiii.meaning-0.0.1-beta.3.aiiospkg",
+          "sha256": "sha256:9825723a76cc417df06c261649061abc20bcdd51e21d1f300ab8bc099edab9c7",
+          "size": 5504516
         }
       ],
       "title": "AII Meaning",
-      "description": "Recall by meaning, computed on this machine. Turns a memory or a cue into a vector with a multilingual embedding model, so that the identity's recall finds what is near in sense as well as what shares words. Only AII OS asks it: it has no network, no tools, no settings and no storage, and keeps nothing it is handed. AII OS downloads the model and its tokenizer (328 MB) and the runtime for its own platform and verifies each. It computes on the processor, on at most four threads, and lets the model go from memory a minute after the last recall. A memory is read to its first 2,048 tokens: the whole of an 8,000-character entry in English, German or Spanish, and about the first 3,900 characters of Korean, 3,450 of Japanese and 2,900 of Chinese; what lies after that in a long entry is not read. Beta: Linux x86-64 (glibc 2.34 or later, as in Debian 12 and Ubuntu 22.04), macOS Apple Silicon (macOS 26.5 or later) and Windows x86-64.",
+      "description": "Recall by meaning, computed on this machine. Turns a memory or a cue into a vector with a multilingual embedding model, so that the identity's recall finds what is near in sense as well as what shares words. Only AII OS asks it: it has no network, no tools, no settings and no storage, and keeps nothing it is handed. AII OS downloads the model and its tokenizer (328 MB) and the runtime for its own platform and verifies each. It computes on the processor, on at most four threads, and lets the model go from memory a minute after the last recall. A memory is read to its first 2,048 tokens: the whole of an 8,000-character entry in English, German or Spanish, and about the first 3,900 characters of Korean, 3,450 of Japanese and 2,900 of Chinese; what lies after that in a long entry is not read. Beta: Linux x86-64 and Linux arm64 (glibc 2.34 or later, as in Debian 12 and Ubuntu 22.04), macOS Apple Silicon (macOS 26.5 or later) and Windows x86-64.",
       "publisher": "AIII",
       "homepage": "https://github.com/aiii-dot-id/aiios-meaning-plugin",
       "license": "Apache-2.0",
