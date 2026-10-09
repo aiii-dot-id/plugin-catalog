@@ -19,7 +19,7 @@ This repository holds only the index and its signature, nothing else.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-10-09T04:06:14Z",
+  "generated": "2026-10-09T18:10:21Z",
   "plugins": [
     {
       "id": "id.aeon.memory",
@@ -115,7 +115,7 @@ This repository holds only the index and its signature, nothing else.
     },
     {
       "id": "id.aiii.meaning",
-      "version": "0.0.1-beta.4",
+      "version": "0.0.1-beta.5",
       "tier": "T3",
       "summary": "AII Meaning",
       "aiios_min_version": "0.1.15",
@@ -124,30 +124,30 @@ This repository holds only the index and its signature, nothing else.
           "platform": "macos",
           "arch": "arm64",
           "os_min_version": "26.5",
-          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.4/id.aiii.meaning-0.0.1-beta.4.aiiospkg",
-          "sha256": "sha256:68b345c8646ecac77020b65f0a63c81373dc5a63dcf93a15c52eeb996870c472",
-          "size": 5525609
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.5/id.aiii.meaning-0.0.1-beta.5.aiiospkg",
+          "sha256": "sha256:7bae0c8a13fbb977a3318fa33953d05b0dd61a13c346ca503e5d30b6f6950e9c",
+          "size": 5525683
         },
         {
           "platform": "linux",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.4/id.aiii.meaning-0.0.1-beta.4.aiiospkg",
-          "sha256": "sha256:68b345c8646ecac77020b65f0a63c81373dc5a63dcf93a15c52eeb996870c472",
-          "size": 5525609
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.5/id.aiii.meaning-0.0.1-beta.5.aiiospkg",
+          "sha256": "sha256:7bae0c8a13fbb977a3318fa33953d05b0dd61a13c346ca503e5d30b6f6950e9c",
+          "size": 5525683
         },
         {
           "platform": "linux",
           "arch": "arm64",
-          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.4/id.aiii.meaning-0.0.1-beta.4.aiiospkg",
-          "sha256": "sha256:68b345c8646ecac77020b65f0a63c81373dc5a63dcf93a15c52eeb996870c472",
-          "size": 5525609
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.5/id.aiii.meaning-0.0.1-beta.5.aiiospkg",
+          "sha256": "sha256:7bae0c8a13fbb977a3318fa33953d05b0dd61a13c346ca503e5d30b6f6950e9c",
+          "size": 5525683
         },
         {
           "platform": "windows",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.4/id.aiii.meaning-0.0.1-beta.4.aiiospkg",
-          "sha256": "sha256:68b345c8646ecac77020b65f0a63c81373dc5a63dcf93a15c52eeb996870c472",
-          "size": 5525609
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.5/id.aiii.meaning-0.0.1-beta.5.aiiospkg",
+          "sha256": "sha256:7bae0c8a13fbb977a3318fa33953d05b0dd61a13c346ca503e5d30b6f6950e9c",
+          "size": 5525683
         }
       ],
       "title": "AII Meaning",
