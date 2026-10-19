@@ -6,14 +6,14 @@ signed package metadata and compatibility before installation.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-10-16T22:03:04Z",
+  "generated": "2026-10-19T10:37:59Z",
   "must_understand": [
     "compat"
   ],
   "plugins": [
     {
       "id": "id.aeon.memory",
-      "version": "0.7.0",
+      "version": "0.8.1",
       "tier": "T3",
       "summary": "Task notes and reusable working lessons with explicit applicability and evidence references.",
       "description": "Store and retrieve notes through the host memory record. Search returns useful text, provenance, applicability and supersession status; a note remains working memory rather than permanent identity truth.",
@@ -24,13 +24,13 @@ signed package metadata and compatibility before installation.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aeon-memory/releases/download/v0.7.0/id.aeon.memory-0.7.0.aiiospkg",
-          "sha256": "sha256:b1c6f9f63e3a6f30e43cb201dc5f26dd1701562506f03e430b88f86f556f1523",
-          "size": 564590
+          "url": "https://github.com/aiii-dot-id/aeon-memory/releases/download/v0.8.1/id.aeon.memory-0.8.1.aiiospkg",
+          "sha256": "sha256:b3347f69f23422e5bf5a5d4d0df5b14e43823d2bb26c2a7abd54032d35c2add2",
+          "size": 625027
         }
       ],
       "title": "Aeon Memory",
-      "aiios_min_version": "0.1.19"
+      "aiios_min_version": "0.1.20"
     },
     {
       "id": "id.aiii.voice",
@@ -130,7 +130,7 @@ signed package metadata and compatibility before installation.
     {
       "id": "id.aeon.planning",
       "title": "Planning",
-      "version": "0.7.0",
+      "version": "0.8.1",
       "tier": "T3",
       "publisher": "AI Identity Incorporated",
       "homepage": "https://github.com/aiii-dot-id/aiios-planning-plugin",
@@ -142,16 +142,16 @@ signed package metadata and compatibility before installation.
         {
           "platform": "linux",
           "arch": "x86_64",
-          "url": "https://github.com/aiii-dot-id/aiios-planning-plugin/releases/download/v0.7.0/id.aeon.planning-0.7.0.aiiospkg",
-          "sha256": "sha256:0df92051365eaa2bb0abafaf64a5aea246ebf04348ccaf60fce39fb7c41545d3",
-          "size": 2784184
+          "url": "https://github.com/aiii-dot-id/aiios-planning-plugin/releases/download/v0.8.1/id.aeon.planning-0.8.1.aiiospkg",
+          "sha256": "sha256:59b3c08087a93bc5e7c59a8174160758ec8ee51a529983f479bc450d092ed904",
+          "size": 2802714
         },
         {
           "platform": "macos",
           "arch": "arm64",
-          "url": "https://github.com/aiii-dot-id/aiios-planning-plugin/releases/download/v0.7.0/id.aeon.planning-0.7.0.aiiospkg",
-          "sha256": "sha256:0df92051365eaa2bb0abafaf64a5aea246ebf04348ccaf60fce39fb7c41545d3",
-          "size": 2784184
+          "url": "https://github.com/aiii-dot-id/aiios-planning-plugin/releases/download/v0.8.1/id.aeon.planning-0.8.1.aiiospkg",
+          "sha256": "sha256:59b3c08087a93bc5e7c59a8174160758ec8ee51a529983f479bc450d092ed904",
+          "size": 2802714
         }
       ]
     },
