@@ -6,7 +6,7 @@ signed package metadata and compatibility before installation.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-10-21T09:23:33Z",
+  "generated": "2026-10-27T04:08:05Z",
   "must_understand": [
     "compat"
   ],
@@ -79,10 +79,10 @@ signed package metadata and compatibility before installation.
     },
     {
       "id": "id.aiii.codequality",
-      "version": "0.1.13",
+      "version": "0.1.14",
       "tier": "T3",
-      "summary": "Review source code and comments for quality findings and dimension scores.",
-      "description": "Review supplied text or scan a sandboxed folder in bounded batches. Results include located findings where available, dimension scores and coverage limits.",
+      "summary": "Prioritize distinct files for review with explicit coverage and reliable partial results.",
+      "description": "Review supplied text or scan a sandboxed folder in bounded batches. Correctness and maintainability review lanes preserve attributed allegations, uncertainty and coverage gaps. Scans resume with model pinning and retained partial evidence. Default file cap 128 KiB, maximum 192 KiB; larger files are unassessed. No semantic accuracy guarantee.",
       "publisher": "AI Identity Incorporated",
       "homepage": "https://github.com/aiii-dot-id/aii-codequality-plugin",
       "license": "Apache-2.0",
@@ -98,9 +98,9 @@ signed package metadata and compatibility before installation.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.13/id.aiii.codequality-0.1.13.aiiospkg",
-          "sha256": "sha256:e6304d474a6bab71041f05ecf3b138ef1ac948379edaa975b5e3b2626927801b",
-          "size": 1643126
+          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.14/id.aiii.codequality-0.1.14.aiiospkg",
+          "sha256": "sha256:aded4c4b05c069d14bedc7946048a2d22955c1bd9bea18bfab52fdfc0d8fdc56",
+          "size": 1602292
         }
       ],
       "title": "Code Quality",
