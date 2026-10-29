@@ -1,0 +1,212 @@
+# AII OS Plugin Catalog
+
+Signed packages for AII OS 0.2. The host verifies the index signature, package hash,
+signed package metadata and compatibility before installation.
+
+```json
+{
+  "catalog_version": 1,
+  "generated": "2026-10-29T21:49:12Z",
+  "must_understand": [
+    "compat",
+    "host_line"
+  ],
+  "plugins": [
+    {
+      "id": "id.aeon.memory",
+      "version": "0.9.0",
+      "tier": "T3",
+      "summary": "Task notes and reusable working lessons with explicit applicability and evidence references.",
+      "description": "Store and retrieve notes through the host memory record. Search returns useful text, provenance, applicability and supersession status; a note remains working memory rather than permanent identity truth.",
+      "publisher": "AI Identity Incorporated",
+      "homepage": "https://github.com/aiii-dot-id/aeon-memory",
+      "license": "Apache-2.0",
+      "packages": [
+        {
+          "platform": "*",
+          "arch": "*",
+          "url": "https://github.com/aiii-dot-id/aeon-memory/releases/download/v0.9.0/id.aeon.memory-0.9.0.aiiospkg",
+          "sha256": "sha256:d73ffe5372cbc02e4b2c3cd32991ff4e38b70974e9c0f7bb3c9381cb219d9ccd",
+          "size": 632824
+        }
+      ],
+      "title": "Memory",
+      "aiios_min_version": "0.1.23"
+    },
+    {
+      "id": "id.aiii.voice",
+      "version": "0.1.0-beta.12",
+      "tier": "T3",
+      "summary": "AII Voice",
+      "packages": [
+        {
+          "platform": "linux",
+          "arch": "x86_64",
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.12/id.aiii.voice-0.1.0-beta.12.aiiospkg",
+          "sha256": "sha256:978cb4deaad1f816754429846dd8356db0cf856006a03da6bed4ecc07cbcd73b",
+          "size": 25432394
+        },
+        {
+          "platform": "macos",
+          "arch": "arm64",
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.12/id.aiii.voice-0.1.0-beta.12.aiiospkg",
+          "os_min_version": "26.5",
+          "sha256": "sha256:978cb4deaad1f816754429846dd8356db0cf856006a03da6bed4ecc07cbcd73b",
+          "size": 25432394
+        },
+        {
+          "platform": "windows",
+          "arch": "x86_64",
+          "url": "https://github.com/aiii-dot-id/aiios-voice-plugin/releases/download/v0.1.0-beta.12/id.aiii.voice-0.1.0-beta.12.aiiospkg",
+          "sha256": "sha256:978cb4deaad1f816754429846dd8356db0cf856006a03da6bed4ecc07cbcd73b",
+          "size": 25432394
+        }
+      ],
+      "title": "AII Voice",
+      "description": "Native speech recognition and synthesis: English recognition with a correction list the identity can teach, twenty selectable voices, seven speaking languages (a language other than English is downloaded when it is chosen), active voice-activity detection with an adjustable pause, interruption and recovery, and guided speaker enrollment and identification. One signed package selects the companion runtime and model data for macOS Apple Silicon, Ubuntu x86-64 or Windows x86-64. AII OS owns downloads, integrity verification, installation, audio, permissions and updates; no system Python is required. Desktop beta: recognition is English only. Speaker identification is probabilistic evidence, not authentication. Read the release notes for prerequisites, settings and qualification limits. Third-party model and runtime components retain their own licenses.",
+      "publisher": "AI Identity Incorporated",
+      "homepage": "https://github.com/aiii-dot-id/aiios-voice-plugin",
+      "license": "Apache-2.0",
+      "category": "voice",
+      "keywords": [
+        "speech",
+        "voice",
+        "STT",
+        "TTS",
+        "VAD",
+        "speaker identification"
+      ],
+      "aiios_min_version": "0.1.15"
+    },
+    {
+      "id": "id.aiii.codequality",
+      "version": "0.1.15",
+      "tier": "T3",
+      "summary": "Prioritize distinct files for review with explicit coverage and reliable partial results.",
+      "description": "Review supplied text or scan a sandboxed folder in bounded batches. Correctness and maintainability review lanes preserve attributed allegations, uncertainty and coverage gaps. Scans resume with model pinning and retained partial evidence. Default file cap 128 KiB, maximum 192 KiB; larger files are unassessed. No semantic accuracy guarantee.",
+      "publisher": "AI Identity Incorporated",
+      "homepage": "https://github.com/aiii-dot-id/aii-codequality-plugin",
+      "license": "Apache-2.0",
+      "category": "code quality",
+      "keywords": [
+        "code quality",
+        "code review",
+        "maintainability",
+        "Jev",
+        "scan"
+      ],
+      "packages": [
+        {
+          "platform": "*",
+          "arch": "*",
+          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.15/id.aiii.codequality-0.1.15.aiiospkg",
+          "sha256": "sha256:afa0bb06e90e74fbcfd951a3050e6b44b013abadb82c730815422c61746ddce4",
+          "size": 2115609
+        }
+      ],
+      "title": "Code Quality",
+      "aiios_min_version": "0.1.10"
+    },
+    {
+      "id": "id.aiii.jev",
+      "title": "Jev",
+      "version": "0.1.3",
+      "tier": "T3",
+      "publisher": "AI Identity Incorporated",
+      "homepage": "https://github.com/aiii-dot-id/aiios-jev-plugin",
+      "license": "Apache-2.0",
+      "summary": "Evaluate text against explicit questions and a chosen judgment model.",
+      "description": "Run bounded text judgments with explicit questions, model selection and structured results. Model judgments are evidence to assess, not independent verification.",
+      "aiios_min_version": "0.1.10",
+      "packages": [
+        {
+          "platform": "*",
+          "arch": "*",
+          "url": "https://github.com/aiii-dot-id/aiios-jev-plugin/releases/download/v0.1.3/id.aiii.jev-0.1.3.aiiospkg",
+          "sha256": "sha256:d99e60756ca81aed71550806d36bde932a41de24b81ab0ba1e24d630af15e756",
+          "size": 589716
+        }
+      ]
+    },
+    {
+      "id": "id.aeon.planning",
+      "title": "Planning",
+      "version": "0.9.1",
+      "tier": "T3",
+      "publisher": "AI Identity Incorporated",
+      "homepage": "https://github.com/aiii-dot-id/aiios-planning-plugin",
+      "license": "Apache-2.0",
+      "summary": "Review task plans, recorded tool calls, execution outcomes and returned evidence.",
+      "description": "Read the current work plan and review a work session with its descendants. Counts and excerpts declare coverage and unavailable evidence. Execution success is distinct from task correctness; explicit calibration and abandonment remain available.",
+      "aiios_min_version": "0.1.19",
+      "packages": [
+        {
+          "platform": "linux",
+          "arch": "x86_64",
+          "url": "https://github.com/aiii-dot-id/aiios-planning-plugin/releases/download/v0.9.1/id.aeon.planning-0.9.1.aiiospkg",
+          "sha256": "sha256:a58e9d5604f5c67f8ff1efe95a01746d26cc57814ac8cf3a88d0c89657bf6a2f",
+          "size": 2653635
+        },
+        {
+          "platform": "macos",
+          "arch": "arm64",
+          "url": "https://github.com/aiii-dot-id/aiios-planning-plugin/releases/download/v0.9.1/id.aeon.planning-0.9.1.aiiospkg",
+          "sha256": "sha256:a58e9d5604f5c67f8ff1efe95a01746d26cc57814ac8cf3a88d0c89657bf6a2f",
+          "size": 2653635
+        }
+      ]
+    },
+    {
+      "id": "id.aiii.meaning",
+      "version": "0.0.1-beta.6",
+      "tier": "T3",
+      "summary": "AII Meaning",
+      "aiios_min_version": "0.1.15",
+      "packages": [
+        {
+          "platform": "macos",
+          "arch": "arm64",
+          "os_min_version": "26.5",
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.6/id.aiii.meaning-0.0.1-beta.6.aiiospkg",
+          "sha256": "sha256:6dd36476e3cf2f2dbcd51f2f4181fdaecd9cdf47be32831a9f85b1c1fd832d9c",
+          "size": 5526924
+        },
+        {
+          "platform": "linux",
+          "arch": "x86_64",
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.6/id.aiii.meaning-0.0.1-beta.6.aiiospkg",
+          "sha256": "sha256:6dd36476e3cf2f2dbcd51f2f4181fdaecd9cdf47be32831a9f85b1c1fd832d9c",
+          "size": 5526924
+        },
+        {
+          "platform": "linux",
+          "arch": "arm64",
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.6/id.aiii.meaning-0.0.1-beta.6.aiiospkg",
+          "sha256": "sha256:6dd36476e3cf2f2dbcd51f2f4181fdaecd9cdf47be32831a9f85b1c1fd832d9c",
+          "size": 5526924
+        },
+        {
+          "platform": "windows",
+          "arch": "x86_64",
+          "url": "https://github.com/aiii-dot-id/aiios-meaning-plugin/releases/download/v0.0.1-beta.6/id.aiii.meaning-0.0.1-beta.6.aiiospkg",
+          "sha256": "sha256:6dd36476e3cf2f2dbcd51f2f4181fdaecd9cdf47be32831a9f85b1c1fd832d9c",
+          "size": 5526924
+        }
+      ],
+      "title": "AII Meaning",
+      "description": "Recall by meaning, computed on this machine. Turns a memory or a cue into a vector with a multilingual embedding model, so that the identity's recall finds what is near in sense as well as what shares words. Only AII OS asks it: it has no network, no tools, no settings and no storage, and keeps nothing it is handed. One signed package for macOS Apple Silicon, Linux x86-64, Linux arm64 and Windows x86-64; AII OS downloads the model and its tokenizer (328 MB) and the runtime for its own platform and verifies each. It computes on the processor, on four threads at most, and lets the model go from memory a minute after the last recall; an AII OS that offers it lets the operator choose fewer threads and how long the model is kept. A memory is read to its first 2,048 tokens: the whole of an 8,000-character entry in English, German or Spanish, and about the first 3,900 characters of Korean, 3,450 of Japanese and 2,900 of Chinese; what lies after that in a long entry is not read. Third-party model and runtime components retain their own licenses.",
+      "publisher": "AI Identity Incorporated",
+      "homepage": "https://github.com/aiii-dot-id/aiios-meaning-plugin",
+      "license": "Apache-2.0",
+      "category": "memory",
+      "keywords": [
+        "memory",
+        "recall",
+        "embeddings",
+        "meaning",
+        "semantic search"
+      ]
+    }
+  ]
+}
+```
