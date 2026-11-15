@@ -2,8 +2,11 @@
 
 The signed index of plugins published by AI Identity Incorporated.
 
-- `aiios-plugins.md` contains one JSON catalog block.
-- `aiios-plugins.md.sig` signs the exact index bytes.
+- Each AII OS release line reads its own index: AII OS 0.1 reads
+  `aiios-plugins.md`, and each later line reads `aiios-plugins-<major>.<minor>.md`
+  (AII OS 0.2 reads `aiios-plugins-0.2.md`). Each holds one JSON catalog block.
+- Each index's `.sig` signs its exact bytes; the signature of a later line's
+  index names that line, so an index is read only by its own line's hosts.
 - Plugin packages and source live in the linked repositories.
 
 Each entry declares a version, supported platforms, download URL, SHA-256,

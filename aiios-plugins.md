@@ -6,7 +6,7 @@ signed package metadata and compatibility before installation.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-10-27T04:08:05Z",
+  "generated": "2026-10-29T21:49:12Z",
   "must_understand": [
     "compat"
   ],
@@ -29,7 +29,7 @@ signed package metadata and compatibility before installation.
           "size": 632824
         }
       ],
-      "title": "Aeon Memory",
+      "title": "Memory",
       "aiios_min_version": "0.1.23"
     },
     {
@@ -79,7 +79,7 @@ signed package metadata and compatibility before installation.
     },
     {
       "id": "id.aiii.codequality",
-      "version": "0.1.14",
+      "version": "0.1.15",
       "tier": "T3",
       "summary": "Prioritize distinct files for review with explicit coverage and reliable partial results.",
       "description": "Review supplied text or scan a sandboxed folder in bounded batches. Correctness and maintainability review lanes preserve attributed allegations, uncertainty and coverage gaps. Scans resume with model pinning and retained partial evidence. Default file cap 128 KiB, maximum 192 KiB; larger files are unassessed. No semantic accuracy guarantee.",
@@ -98,9 +98,9 @@ signed package metadata and compatibility before installation.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.14/id.aiii.codequality-0.1.14.aiiospkg",
-          "sha256": "sha256:aded4c4b05c069d14bedc7946048a2d22955c1bd9bea18bfab52fdfc0d8fdc56",
-          "size": 1602292
+          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.15/id.aiii.codequality-0.1.15.aiiospkg",
+          "sha256": "sha256:afa0bb06e90e74fbcfd951a3050e6b44b013abadb82c730815422c61746ddce4",
+          "size": 2115609
         }
       ],
       "title": "Code Quality",
