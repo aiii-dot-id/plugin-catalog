@@ -6,7 +6,7 @@ signed package metadata and compatibility before installation.
 ```json
 {
   "catalog_version": 1,
-  "generated": "2026-10-29T21:49:12Z",
+  "generated": "2026-11-15T22:23:14Z",
   "must_understand": [
     "compat",
     "host_line"
@@ -80,10 +80,10 @@ signed package metadata and compatibility before installation.
     },
     {
       "id": "id.aiii.codequality",
-      "version": "0.1.15",
+      "version": "0.2.2",
       "tier": "T3",
       "summary": "Prioritize distinct files for review with explicit coverage and reliable partial results.",
-      "description": "Review supplied text or scan a sandboxed folder in bounded batches. Correctness and maintainability review lanes preserve attributed allegations, uncertainty and coverage gaps. Scans resume with model pinning and retained partial evidence. Default file cap 128 KiB, maximum 192 KiB; larger files are unassessed. No semantic accuracy guarantee.",
+      "description": "Review supplied text or scan a sandboxed folder in bounded batches. Correctness and maintainability review lanes preserve attributed allegations, uncertainty and coverage gaps. Scans resume with model pinning and retained partial evidence. Scans consider eligible source files up to 1 MiB and process files larger than 192 KiB in segments. No semantic accuracy guarantee.",
       "publisher": "AI Identity Incorporated",
       "homepage": "https://github.com/aiii-dot-id/aii-codequality-plugin",
       "license": "Apache-2.0",
@@ -99,18 +99,18 @@ signed package metadata and compatibility before installation.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.1.15/id.aiii.codequality-0.1.15.aiiospkg",
-          "sha256": "sha256:afa0bb06e90e74fbcfd951a3050e6b44b013abadb82c730815422c61746ddce4",
-          "size": 2115609
+          "url": "https://github.com/aiii-dot-id/aii-codequality-plugin/releases/download/v0.2.2/id.aiii.codequality-0.2.2.aiiospkg",
+          "sha256": "sha256:2df951df9bf27f9b4bf28b7057a1ce28c409fb468e4dd33aa317c51592168345",
+          "size": 2679561
         }
       ],
       "title": "Code Quality",
-      "aiios_min_version": "0.1.10"
+      "aiios_min_version": "0.2.2"
     },
     {
       "id": "id.aiii.jev",
       "title": "Jev",
-      "version": "0.1.3",
+      "version": "0.2.0",
       "tier": "T3",
       "publisher": "AI Identity Incorporated",
       "homepage": "https://github.com/aiii-dot-id/aiios-jev-plugin",
@@ -122,9 +122,9 @@ signed package metadata and compatibility before installation.
         {
           "platform": "*",
           "arch": "*",
-          "url": "https://github.com/aiii-dot-id/aiios-jev-plugin/releases/download/v0.1.3/id.aiii.jev-0.1.3.aiiospkg",
-          "sha256": "sha256:d99e60756ca81aed71550806d36bde932a41de24b81ab0ba1e24d630af15e756",
-          "size": 589716
+          "url": "https://github.com/aiii-dot-id/aiios-jev-plugin/releases/download/v0.2.0/id.aiii.jev-0.2.0.aiiospkg",
+          "sha256": "sha256:e75aeda9002ee6a4f317162ee430bfa8182f5af8703ace4101480c0164ee91cf",
+          "size": 797441
         }
       ]
     },
